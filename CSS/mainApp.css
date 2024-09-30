@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-bottom: 1px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5vw;
+    z-index: 9;
+}
+
+.logo {
+    height: 30px;
+}
+
+.search-box {
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    width: 260px;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 20px;
+}
+
+.search-btn {
+    background: #fff;
+    border: 1px solid #999;
+    border-left: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-icon {
+    border-radius: 5px !important;
+}
+
+.user-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.main {
+    margin-top: 100px;
+    padding: 0 10vw;
+    gap: 50px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.add-post-button {
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: rgb(51, 248, 51);
+}
+
+.post-container {
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 30px; /* Space between posts */
+}
+
+.post {
+    width: 50%;
+    border: 1px solid #999;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.post-detail {
+    margin-top: 10px;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    opacity: 0.7;
+}
+
+.add-comment-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.info-container p {
+    font-size: .8rem;
+    line-height: 1.2rem;
+    opacity: 0.8;
+}
+
+.like-button {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.messages-container {
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 40%;
+    padding: 10px;
+}
+
+.window {
+    margin: 30px;
+}
