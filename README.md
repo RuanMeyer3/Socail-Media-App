@@ -1,7 +1,7 @@
 # Socail-Media-App
 
-Description
-This is a simple social media app where users can register, log in, view a timeline of posts, like posts, view profiles, and send messages. The app is built using HTML, PHP, and CSS, and it runs on a WAMP server with SQL and phpMyAdmin for database management.
+# Description
+# This is a simple social media app where users can register, log in, view a timeline of posts, like posts, view profiles, and send messages. The app is built using HTML, PHP, and CSS, and it runs on a WAMP server with SQL and phpMyAdmin for database management.
 
 Features
 User Registration and Login:
