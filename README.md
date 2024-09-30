@@ -30,3 +30,40 @@ This is a simple social media app where users can register, log in, view a timel
 3. Start the WAMP server and open **phpMyAdmin**.
 4. Create a new database for the app and import the SQL script to set up the necessary tables (e.g., users, posts, likes).
 5. Update the **database connection settings** in the PHP files to match your local environment.
+
+# Database Structure
+
+The database name is **socialhub**. Within the database, the following tables are present:
+
+## `users` Table
+- **user_id**: INT, PRIMARY KEY
+- **name**: VARCHAR(25)
+- **surname**: VARCHAR(25)
+- **email**: VARCHAR(50)
+- **password**: VARCHAR(50)
+- **phone**: INT
+- **profile**: VARCHAR(255)
+- **username**: VARCHAR(50)
+- **age**: INT
+
+## `posts` Table
+- **post_id**: INT, PRIMARY KEY
+- **about**: VARCHAR(255)
+- **image**: VARCHAR(255)
+- **timestamp**: TIMESTAMP
+- **username**: VARCHAR(255)
+- **profile**: VARCHAR(255)
+
+## `messages` Table
+- **messages_id**: INT, PRIMARY KEY
+- **sender_id**: INT, FOREIGN KEY
+- **recipient_id**: INT, FOREIGN KEY
+- **content**: TEXT
+- **timestamp**: TIMESTAMP
+
+## `likes` Table
+- **id**: INT, PRIMARY KEY
+- **post_id**: INT, FOREIGN KEY
+- **user_id**: INT, FOREIGN KEY
+- **liked**: TINYINT
+- **timestamp**: TIMESTAMP
