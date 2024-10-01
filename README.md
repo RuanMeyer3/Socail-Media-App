@@ -17,10 +17,18 @@ This is a simple social media app where users can register, log in, view a timel
 ### Profiles and Messaging:
 - Users can click on a profile picture on the timeline to view a profile page.
 - Users can send messages to other users directly from their profiles.
+- On the home page there is a messaging button. Once you click on the messaging button, a list of users you have messaged will appear. If you haven't messaged anyone, a message will display saying, "No messages yet."
+
+### Searches:
+-	A search button and box are available on the home page for users to search for other users on the app. 
+-	When searching for someone you can search by their first name, last name, or username. 
+-	Partial correct searches will also display the users. For example, when searching ‘Rich’ it will display the profile of ‘Richfield Institute’ because it is partially correct. 
+-	More then one user can be displayed if they have the same name, surname, or username. 
+
 
 ## Technology Stack
 - **Frontend**: HTML, CSS
-- **Backend**: PHP
+- **Backend**: PHP, JavaScript
 - **Database**: MySQL, managed through phpMyAdmin
 - **Server**: WAMP (Windows, Apache, MySQL, PHP)
 
